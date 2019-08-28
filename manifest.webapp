@@ -1,0 +1,76 @@
+ {
+    "version":"2.1.4",
+    "name": "KavsK",
+    "description": "KavsK is app for farmers crop business",
+    "display":"KavsK",
+    "subtitle":"Farmers, Crop and Business",
+    "theme":"#03007F",
+    "origin": "app://kavsk.com",
+    "launch_path": "/index.html",
+    "icons": {
+        "56": "/images/icon_64s.png",
+        "84": "/images/icon_128s.png"
+    },
+    "developer": {
+        "name": "Jio",
+        "url": "https://kavsk.com"
+    },
+
+  "release":"alpha",
+   "type": "certified",
+    "activities": {
+    "KavsK": {
+      "href": "/index.html",
+      "disposition": "window",      
+      "returnValue": true,
+      "filters": {
+        "type": "text"
+      }
+    }
+  },
+
+  "datastores-access":{
+        "jio_service_store":{
+        "readonly": false,
+          "description":"Jio Service store"
+      }
+    },
+    
+    "permissions": {
+      "mobileconnection": {
+      "description": "Obtain information from the device about cell ID."
+        },
+         "wifi-manage": {
+          "description": "Wifi manager."
+        },
+        "geolocation": {
+            "description": "Used to locate me"
+        },
+        "browser": {},
+        "systemXHR": {
+            "description": "Required to make Network calls" 
+        },
+        "webapps-manage":{},
+        "device-storage:apps":{},
+        "alarms":{
+          "description": "Required to schedule alarm" 
+          }
+    },
+
+    "messages":[
+    {
+      "alarm": "/mainmenu.html"
+    }
+    ],
+    
+    "default_locale": "en-US",
+     "locales": {
+    "en-US": {
+      "name": "KavsK",
+      "description": "KavsK is app for farmers crop business",
+      "subtitle":"Farmers, Crop and Business"
+    }
+    
+  }
+   
+}
